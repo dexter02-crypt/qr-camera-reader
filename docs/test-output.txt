@@ -1,0 +1,27 @@
+test_cli_demo_and_duplicate_output (test_camera_utils.IOTests.test_cli_demo_and_duplicate_output) ... ok
+test_export_never_overwrites_image (test_camera_utils.IOTests.test_export_never_overwrites_image) ... ok
+test_failed_camera_releases (test_camera_utils.IOTests.test_failed_camera_releases) ... ok
+test_header_keeps_input (test_camera_utils.IOTests.test_header_keeps_input) ... ok
+test_invalid_frames (test_camera_utils.IOTests.test_invalid_frames) ... ok
+test_invalid_image_data (test_camera_utils.IOTests.test_invalid_image_data) ... ok
+test_metadata_collision_prevents_image_write (test_camera_utils.IOTests.test_metadata_collision_prevents_image_write) ... ok
+test_network_camera_rejected_before_open (test_camera_utils.IOTests.test_network_camera_rejected_before_open) ... ok
+test_one_frame_loop_without_gui_or_camera (test_camera_utils.IOTests.test_one_frame_loop_without_gui_or_camera) ... ok
+test_pair_export_and_read (test_camera_utils.IOTests.test_pair_export_and_read) ... ok
+test_processing_exception_releases_camera_and_windows (test_camera_utils.IOTests.test_processing_exception_releases_camera_and_windows) ... ok
+test_symlink_output_refused (test_camera_utils.IOTests.test_symlink_output_refused) ... ok
+test_actual_two_codes_decode (test_qr.QRTests.test_actual_two_codes_decode) ... ok
+test_bad_corner_results_rejected (test_qr.QRTests.test_bad_corner_results_rejected) ... ok
+test_blank_no_code (test_qr.QRTests.test_blank_no_code) ... ok
+test_escape_controls_and_unicode (test_qr.QRTests.test_escape_controls_and_unicode) ... ok
+test_input_unchanged (test_qr.QRTests.test_input_unchanged) ... ok
+test_long_payload_explicitly_truncated (test_qr.QRTests.test_long_payload_explicitly_truncated) ... ok
+test_partial_undecoded_results_ignored (test_qr.QRTests.test_partial_undecoded_results_ignored) ... ok
+test_repeat_payloads_not_double_counted (test_qr.QRTests.test_repeat_payloads_not_double_counted) ... ok
+test_session_bounded_and_reset (test_qr.QRTests.test_session_bounded_and_reset) ... ok
+test_truncated_prefix_not_counted (test_qr.QRTests.test_truncated_prefix_not_counted) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.176s
+
+OK

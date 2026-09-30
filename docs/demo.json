@@ -1,0 +1,50 @@
+{
+  "kind": "SYNTHETIC_FIXTURE",
+  "codes": [
+    {
+      "text": "KEDBYTE-DEMO-ONE",
+      "truncated": false,
+      "corners": [
+        [
+          67.0,
+          112.0
+        ],
+        [
+          297.0,
+          112.0
+        ],
+        [
+          297.4132080078125,
+          342.229248046875
+        ],
+        [
+          67.0,
+          343.0
+        ]
+      ]
+    },
+    {
+      "text": "https://example.invalid/not-opened",
+      "truncated": false,
+      "corners": [
+        [
+          467.0,
+          112.0
+        ],
+        [
+          697.0,
+          112.0
+        ],
+        [
+          697.4132690429688,
+          342.229248046875
+        ],
+        [
+          467.0,
+          343.0
+        ]
+      ]
+    }
+  ],
+  "note": "No payload executed or opened. No accuracy benchmark."
+}
