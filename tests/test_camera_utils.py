@@ -10,6 +10,9 @@ import camera_utils as u
 import app
 
 class IOTests(unittest.TestCase):
+    def test_release_version(self):
+        self.assertEqual(app.__version__, "0.1.0")
+
     def test_pair_export_and_read(self):
         with tempfile.TemporaryDirectory() as t:
             p=Path(t).resolve()/'out.png';im=np.zeros((80,120,3),np.uint8)

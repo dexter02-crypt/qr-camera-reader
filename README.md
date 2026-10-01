@@ -29,8 +29,6 @@ bash setup.sh
 
 Setup creates a local `.venv` and installs the pinned OpenCV/NumPy dependencies. It does not modify another project or system Python. Standard CPython 3.11–3.14 is allowed by this setup; `PYTHON=python3.12 bash setup.sh` selects a version explicitly. Only one OpenCV provider is allowed in the environment. There is no MediaPipe dependency or model download.
 
-From the parent camera-project kit, use `python3 portfolio.py setup qr-camera-reader`, `demo qr-camera-reader --open`, or `camera qr-camera-reader` instead. **Do not run the parent portfolio script from this subfolder.**
-
 The live command opens local camera index 0; `--camera 1` selects another index. Close other camera applications first. macOS must permit camera access for your terminal/Python process. **Q/Esc** exits. The application loop always attempts to release the camera and close its windows, including on errors.
 
 Demo and local-image commands explicitly write a PNG and JSON report under ignored `outputs/` by default. `--output some-new-name.png` selects a destination. Existing files or output symlinks are refused. Reports can contain private decoded/image-derived data: inspect them before sharing. The camera command does not write recordings or metrics. Package installation needs the package index; processing itself makes no network requests in this application code.
@@ -41,7 +39,7 @@ Demo and local-image commands explicitly write a PNG and JSON report under ignor
 .venv/bin/python -m unittest discover -s tests -v
 ```
 
-22 tests passed on Linux CPython 3.13.5 with OpenCV 4.13.0 and NumPy 2.3.5. The tests include actual OpenCV processing of synthetic pixels, plus fake webcam/GUI calls for error-path coverage. macOS camera use and representative real-world precision/recall are **not verified** by those tests. See [validation](docs/VALIDATION.md), [design](docs/DESIGN.md), and [manual acceptance](docs/ACCEPTANCE_TESTS.md).
+The release-candidate suite contains 23 tests, including actual OpenCV decoding of the synthetic fixture, export/no-overwrite behavior, bounded session handling, camera cleanup/error paths, and release-version identity. Hosted release CI targets Python 3.11–3.14 on both Ubuntu and macOS. Physical camera operation and representative real-world precision/recall remain separate hardware/field checks. See [validation](docs/VALIDATION.md), [design](docs/DESIGN.md), and [manual acceptance](docs/ACCEPTANCE_TESTS.md).
 
 ## References and license
 

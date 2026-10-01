@@ -7,6 +7,8 @@ import cv2
 from camera_utils import camera_loop,header,read_image,export_pair
 from core import detect,annotate,escaped,Session
 
+__version__ = "0.1.0"
+
 
 def main(argv=None):
     p=argparse.ArgumentParser(description=__doc__);sub=p.add_subparsers(dest='command',required=True)
